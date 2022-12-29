@@ -15,8 +15,29 @@ import java.util.List;
 public class Classifier extends DataSet {
 	DataSet referenceSet;
 	
+	
+	/**
+	 * Constructor that receives a string with the path to a file
+	 * and calls the other constructor in the class passing on a 
+	 * File object
+	 * 
+	 * @param path
+	 * @throws FileNotFoundException
+	 */
 	public Classifier (String path) throws FileNotFoundException {
-		this.referenceSet = super.load(new File(path));
+		this(new File(path));
+		
+	}
+	
+	/**
+	 * Constructor that receives a file and passes it on to the load 
+	 * method of the super class
+	 * 
+	 * @param file
+	 * @throws FileNotFoundException
+	 */
+	public Classifier (File file) throws FileNotFoundException {
+		this.referenceSet = super.load(file);
 	}
 	
 	

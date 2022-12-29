@@ -25,6 +25,7 @@ public class DataSet implements Iterable<IPattern>  {
 	 * @param a file
 	 * @requires each line of the use file two follow the pattern <double> <double> <int>
 	 * @ensures a new DataSet is created (with the Patterns in the file) and returned
+	 * @throws FileNotFoundException
 	 */
 	public static DataSet load(File data) throws FileNotFoundException {		
 		Scanner file = new Scanner(new BufferedReader(new FileReader(data)));
