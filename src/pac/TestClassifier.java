@@ -6,8 +6,9 @@ import java.util.List;
 
 public class TestClassifier {
 
-    private static final String ref = "data/peixes-referencia.dat";
-    private static final String aval = "data/peixes-aval.dat";
+	private static final String ref = "data/peixes-referencia.dat";
+	private static final String aval = "data/peixes-aval.dat";
+
 
     public static void main(String[] args) throws FileNotFoundException {
 

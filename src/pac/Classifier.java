@@ -26,7 +26,6 @@ public class Classifier extends DataSet {
 	 */
 	public Classifier (String path) throws FileNotFoundException {
 		this(new File(path));
-		
 	}
 	
 	/**
